@@ -1,0 +1,16 @@
+node_modules
+
+coverage
+.coverage.json
+
+build/
+!build/contracts/Purpose.json
+!build/contracts/Dubi.json
+!build/contracts/Hodl.json
+!build/contracts/OptIn.json
+!build/contracts/ProtectedBoostableLib.json
+!build/contracts/HodlLib.json
+
+# OpenZeppelin
+.openzeppelin/dev*.json
+.openzeppelin/.session

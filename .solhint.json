@@ -1,0 +1,12 @@
+{
+  "extends": "solhint:recommended",
+  "rules": {
+    "func-order": "off",
+    "mark-callable-contracts": "off",
+    "func-name-mixedcase": "off",
+    "no-empty-blocks": "off",
+    "visibility-modifier-order": "off",
+    "compiler-version": ["error", "0.6.12"],
+    "private-vars-leading-underscore": "error"
+  }
+}

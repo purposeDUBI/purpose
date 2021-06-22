@@ -1,0 +1,26 @@
+{
+  "manifestVersion": "2.2",
+  "name": "purpose",
+  "version": "1.0.0",
+  "compiler": {
+    "compilerSettings": {
+      "evmVersion": "istanbul",
+      "optimizer": {
+        "enabled": true,
+        "runs": "200"
+      }
+    },
+    "typechain": {
+      "enabled": true,
+      "outDir": "./types/contracts/",
+      "target": "truffle"
+    },
+    "manager": "openzeppelin",
+    "solcVersion": "0.6.12",
+    "artifactsDir": "build/contracts",
+    "contractsDir": "contracts"
+  },
+  "telemetryOptIn": false,
+  "dependencies": {},
+  "contracts": {}
+}

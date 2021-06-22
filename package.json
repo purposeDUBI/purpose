@@ -1,0 +1,68 @@
+{
+  "name": "@prps/solidity",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "files": [
+    "build",
+    "contracts",
+    "lib",
+    "types",
+    "package-lock.json"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/purposeDUBI/purpose.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/purposeDUBI/purpose/issues"
+  },
+  "homepage": "https://prps.io",
+  "scripts": {
+    "preinstall": "npx npm-force-resolutions",
+    "build": "npx tsc",
+    "precompile": "rm -rf build/contracts",
+    "compile": "npx oz compile",
+    "ganache": " npx ganache-cli --deterministic --gasLimit 12000000 --gasPrice 100000000000 --allowUnlimitedContractSize",
+    "premigrate": "npm run build",
+    "migrate": "npx truffle migrate --network development",
+    "test": "mocha --require ts-node/register --recursive --exit --timeout 300000",
+    "test-openzeppelin-fork": "mocha --recursive --exit --timeout 300000 tests/openzeppelin/**/*.test.js"
+  },
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.0.2",
+    "@nomiclabs/hardhat-etherscan": "^2.1.3",
+    "@openzeppelin/cli": "^2.8.2",
+    "@openzeppelin/contracts": "^3.1.0",
+    "@openzeppelin/test-environment": "git+https://github.com/OpenZeppelin/openzeppelin-test-environment.git#80179acb79b31456e4ad8427523555d241300447",
+    "@openzeppelin/test-helpers": "^0.5.6",
+    "@truffle/hdwallet-provider": "^1.0.44",
+    "@types/chai": "^4.2.11",
+    "@types/expect": "^24.3.0",
+    "@types/mocha": "^7.0.2",
+    "@types/node": "^14.0.14",
+    "bn.js": "^5.1.3",
+    "chai": "^4.2.0",
+    "chai-bn": "^0.2.1",
+    "eth-sig-util": "^2.5.3",
+    "ganache-cli": "^6.10.2",
+    "hardhat": "^2.4.0",
+    "mocha": "^8.0.1",
+    "npm-force-resolutions": "0.0.3",
+    "prettier": "^2.0.5",
+    "prettier-plugin-solidity": "^1.0.0-alpha.54",
+    "rlp": "^2.2.5",
+    "solhint": "^3.1.0",
+    "solidity-coverage": "^0.7.9",
+    "solidity-docgen": "^0.5.3",
+    "truffle": "^5.1.44",
+    "truffle-flattener": "^1.5.0",
+    "truffle-typings": "^1.0.8",
+    "ts-node": "^8.10.2",
+    "typescript": "^4.0.2"
+  },
+  "resolutions": {
+    "@truffle/error": "0.0.8"
+  }
+}
