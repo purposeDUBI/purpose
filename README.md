@@ -1,14 +1,12 @@
 # Purpose Contracts
 
-Mainnet addresses
+## Mainnet addresses
 
-```json
-{
-    "Purpose": "0xb628Bc994e39CE264ECa6f6EE1620909816A9F12",
-    "Dubi": "0xF3D6Af45C6dFeC43216CC3347Ea91fEfBa0849D1",
-    "Hodl": "0xaC0122e9258a85bA5479DB764DC8eF91caB08db0"
-}
-```
+| Contract | Address |
+| --------------- | --------------- |  
+| PRPS | [0x972999c58BbcE63a2e398d4ED3Bde414b8349eB3](https://polygonscan.com/address/0x972999c58bbce63a2e398d4ed3bde414b8349eb3) |  
+| DUBI | [0x950e1561B7A7dEB1A32A6419FD435410daf851B0](https://polygonscan.com/address/0x950e1561b7a7deb1a32a6419fd435410daf851b0) |  
+| HODL | [0x0ff652F7E5389EF66cB0c1Add614F5a50d1e2E34](https://polygonscan.com/address/0x0ff652F7E5389EF66cB0c1Add614F5a50d1e2E34) |  
 
 ## Install
 
